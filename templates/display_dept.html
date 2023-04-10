@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>department</title>
+    <style>
+    table{
+      padding: 10px;
+      border-style: groove;
+      background-color: rgb(78, 101, 177);
+      
+
+  }
+  h1{
+      background-color: rgb(212, 71, 5);
+  }
+  img{
+    border-radius: 250px;
+    border-start-end-radius: 50%;
+  }
+</style>
+</head>
+<body>
+    <center>
+        <h1>DEPARTMENT TABLE</h1>
+        
+        <table border="3px">
+          <tr>
+            <th>Deptno</th>
+            <th>Dname</th>
+            <th>Loc</th>
+          </tr>
+        {% for i in dept %}
+           <tr>
+            <td>{{i.deptno}}</td>
+            <td>{{i.dname}}</td>
+            <td>{{i.loc}}</td>
+           </tr>
+        {% endfor %}
+        </table>
+        <img src="https://th.bing.com/th/id/OIP.vdFDtw3IGemy_Cx3pWkZIQHaFG?w=251&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+    </center>
+</body>
+</html>

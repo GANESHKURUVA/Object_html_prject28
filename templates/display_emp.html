@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EMP </title>
+    <style>
+        table{
+            padding: 10px;
+            border-style: groove;
+            background-color: limegreen;
+            
+
+        }
+        h1{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>EMP TABLE</h1>
+        <table border="3px">
+            <tr>
+                <th>Empno</th>
+                <th>Ename</th>
+                <th>Job</th>
+                <th>Mgr</th>
+                <th>HireDate</th>
+                <th>Sal</th>
+                <th>Comm</th>
+                <th>Deptno</th>
+            </tr>
+        {% for i in emp %}
+           <tr>
+            <td>{{i.empno}}</td>
+            <td>{{i.ename}}</td>
+            <td>{{i.job}}</td>
+            <td>{{i.mgr}}</td>
+            <td>{{i.hiredate}}</td>
+            <td>{{i.sal}}</td>
+            <td>{{i.comm}}</td>
+            <td>{{i.deptno}}</td>
+           </tr>
+        {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
